@@ -1,8 +1,16 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Body
 import Footer from "./Components/Body/Footer";
 import Navbar from "./Components/Body/Navbar";
 import Sidebar from "./Components/Body/Sidebar";
+
 import Homepage from "./Components/Main/Homepage";
+import ShopNow from "./Components/Main/ShopNow";
+import ProductDescription from "./Components/Main/ProductDescription";
+import Cart from "./Components/Main/Cart";
+import ItemForm from "./Components/Forms/ItemForm";
 
 function App() {
   return (
@@ -10,8 +18,17 @@ function App() {
       <Sidebar />
 
       <div id="wrapper">
-        <Navbar />
-        <Homepage />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/Shop-now" element={<ShopNow />} />
+            <Route path="/Product-description" element={<ProductDescription />} />
+            <Route path="/Cart" element={< Cart />} />
+
+            <Route path="/Checkout" element={< ItemForm />} />
+          </Routes>
+        </Router>
         <Footer />
       </div>
     </div>
