@@ -1,27 +1,12 @@
 import React from 'react'
+import DiscountArea from '../HomePage/DiscountArea'
 
 const ShopNow = () => {
     return (
         <div>
 
             <div>
-                <section className="top-discount-area d-md-flex align-items-center">
-                    {/* Single Discount Area */}
-                    <div className="single-discount-area">
-                        <h5>Free Shipping &amp; Returns</h5>
-                        <h6><a href="#">BUY NOW</a></h6>
-                    </div>
-                    {/* Single Discount Area */}
-                    <div className="single-discount-area">
-                        <h5>20% Discount for all dresses</h5>
-                        <h6>USE CODE: Colorlib</h6>
-                    </div>
-                    {/* Single Discount Area */}
-                    <div className="single-discount-area">
-                        <h5>20% Discount for students</h5>
-                        <h6>USE CODE: Colorlib</h6>
-                    </div>
-                </section>
+              <DiscountArea/>
                 <section className="shop_grid_area section_padding_100">
                     <div className="container">
                         <div className="row">

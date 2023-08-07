@@ -17,9 +17,7 @@ const Navbar = () => {
                                     <div className="header-cart-menu d-flex align-items-center ml-auto">
                                         <div className="cart me-3">
                                             <a href="#" id="header-cart-btn" target="_blank"><span className="cart_quantity">2</span> <i className="ti-bag" /> Your Bag $20</a>
-                                            
                                         </div>
-                                     
                                     </div>
                                 </div>
                             </div>
@@ -52,15 +50,21 @@ const Navbar = () => {
                                                         <Link className="dropdown-item" to="/checkout">Checkout</Link>
                                                     </div>
                                                 </li>
-                                                <li className="nav-item"><a className="nav-link" href="#">Dresses</a></li>
-                                                <li className="nav-item"><a className="nav-link" href="#"><span className="karl-level">hot</span> Shoes</a></li>
-                                                <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+                                                <li className="nav-item"><a className="nav-link" href="#">Shorts</a></li>
+                                                <li className="nav-item"><a className="nav-link" href="#">Bottoms</a></li>
+                                                <li className="nav-item"><a className="nav-link" href="#">WINTER CLEARANCE -UPTO 75% OFF</a></li>
+                                                <li className="nav-item"><a className="nav-link" href="#">Our Blogs</a></li>
                                             </ul>
                                         </div>
                                     </nav>
                                 </div>
                                 <div className="help-line">
-                                    <a href="tel:+346573556778"><i className="ti-headphone-alt" /> &nbsp; +12 345 6789 100</a>
+                                    <div className='d-flex'>
+                                        <a href="" className='ms-1'><i className="fa-solid fa-magnifying-glass" /></a>
+                                        <a href="" className='ms-1'><i className="fa-solid fa-user" /></a>
+                                        <a href="" className='ms-1'><i className="fa-solid fa-cart-shopping" /></a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

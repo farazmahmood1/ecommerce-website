@@ -1,5 +1,4 @@
 import React from 'react'
-import backgroundImage1 from '../SourceFiles/Images/bg-1.jpg'
 const Hero = () => {
     return (
         <div>
@@ -59,63 +58,21 @@ const Hero = () => {
                             <div className="carousel-item active" data-bs-interval={5000}>
                                 <div className="single_slide height-800 bg-img background-overlay" style={{ backgroundImage: 'url(img/bg-img/bg-2.jpg)' }}>
                                     <div className="container h-100">
-                                        <div className="row h-100 align-items-center">
+                                        <div className="row h-100 align-items-center justify-content-center text-center">
                                             <div className="col-12">
-                                                <div className="welcome_slide_text">
-                                                    <h6 data-animation="fadeInDown" data-delay={0.5} data-duration="500ms">* Only today we offer free shipping</h6>
-                                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Women Fashion</h2>
+                                                <div className="welcome_slide_text ">
+                                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">twill denim</h2>
+                                                    <h6 data-animation="fadeInDown" data-delay={0.5} data-duration="500ms">* Upto 60% off</h6>
                                                     <a href="#" className="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">Check Collection</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-                            </div>
-                            <div className="carousel-item" data-bs-interval={5000}>
-                                <div className="single_slide height-800 bg-img background-overlay" style={{ backgroundImage: 'url(img/bg-img/bg-2.jpg)' }}>
-                                    <div className="container h-100">
-                                        <div className="row h-100 align-items-center">
-                                            <div className="col-12">
-                                                <div className="welcome_slide_text">
-                                                    <h6 data-animation="fadeInDown" data-delay={0.5} data-duration="500ms">* Only today we offer free shipping</h6>
-                                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Women Fashion</h2>
-                                                    <a href="#" className="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">Check Collection</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div className="carousel-item" data-bs-interval={5000}>
-                                <div className="single_slide height-800 bg-img background-overlay" style={{ backgroundImage: 'url(img/bg-img/bg-2.jpg)' }}>
-                                    <div className="container h-100">
-                                        <div className="row h-100 align-items-center">
-                                            <div className="col-12">
-                                                <div className="welcome_slide_text">
-                                                    <h6 data-animation="fadeInDown" data-delay={0.5} data-duration="500ms">* Only today we offer free shipping</h6>
-                                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Women Fashion</h2>
-                                                    <a href="#" className="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">Check Collection</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </section>
                 </div>
-                {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true" />
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true" />
-                    <span className="visually-hidden">Next</span>
-                </button> */}
             </div>
 
 

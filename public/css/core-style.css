@@ -542,9 +542,9 @@ img {
 .help-line a {
   width: auto;
   height: 35px;
-  padding: 0 30px;
-  background-color: #ff084e;
-  color: #fff;
+  padding: 0 13px;
+  /* background-color: #ff084e; */
+  color: #000;
   display: block;
   line-height: 35px;
   font-size: 14px;
@@ -553,7 +553,8 @@ img {
 
 .help-line a:hover,
 .help-line a:focus {
-  background-color: #3a3a3a;
+color:#ff084e;
+transform: scale(1.3);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -627,9 +628,6 @@ img {
   background-color: #ff084e;
 }
 
-.menu-list {
-  margin-top: 50px;
-}
 
 .menu-list h6 {
   padding: 30px 15px;
@@ -797,19 +795,19 @@ img {
 
 .welcome_slide_text > h2,
 .single_catagory_area h2 {
-  font-size: 92px;
+  font-size: 62px;
   letter-spacing: 0;
-  margin-left: -5px;
+  /* margin-left: -5px; */
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .welcome_slide_text h6,
 .single_catagory_area h6 {
   color: #fff;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .welcome_slides.owl-carousel .owl-dots {
@@ -1169,16 +1167,28 @@ img {
 }
 
 .product-description .add-to-cart-btn {
-  margin-top: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  margin-top: 30px;
   font-size: 12px;
   font-weight: 700;
   color: #ff084e;
   display: block;
+  text-align: center;
+  justify-content: center;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .product-description .add-to-cart-btn:hover {
   color: #2a2a2a;
 }
+
+.product-description .add-to-cart-btn:active {
+  border: 3px solid #000;
+  transition: 0.1s ease-in-out; 
+}
+
 
 /* -------------------
 :: 12.0 Offer Area CSS
