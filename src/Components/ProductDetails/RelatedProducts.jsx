@@ -16,7 +16,7 @@ const RelatedProducts = () => {
                         <div className="col-12">
                             <div className="you_make_like_slider">
                                 <div className='row'>
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-3'>
                                         <div className="single_gallery_item">
                                             {/* Product Image */}
                                             <div className="product-img">
@@ -27,15 +27,25 @@ const RelatedProducts = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
+                                        <p>Jeans midi cocktail dress</p>
+                                        <div className='d-flex align-items-center'>
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <p className='ms-1'>&nbsp;2 reviews</p>
+                                        </div>
+                                        <div className='d-flex align-items-center mt-2'>
+                                            <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                            <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                        </div>
+                                        <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
+                                    </div>
                                         </div>
                                     </div>
 
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-3'>
                                         <div className="single_gallery_item">
                                             {/* Product Image */}
                                             <div className="product-img">
@@ -46,15 +56,25 @@ const RelatedProducts = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
+                                        <p>Jeans midi cocktail dress</p>
+                                        <div className='d-flex align-items-center'>
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <p className='ms-1'>&nbsp;2 reviews</p>
+                                        </div>
+                                        <div className='d-flex align-items-center mt-2'>
+                                            <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                            <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                        </div>
+                                        <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
+                                    </div>
                                         </div>
                                     </div>
 
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-3'>
                                         <div className="single_gallery_item">
                                             {/* Product Image */}
                                             <div className="product-img">
@@ -65,15 +85,25 @@ const RelatedProducts = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
+                                        <p>Jeans midi cocktail dress</p>
+                                        <div className='d-flex align-items-center'>
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <p className='ms-1'>&nbsp;2 reviews</p>
+                                        </div>
+                                        <div className='d-flex align-items-center mt-2'>
+                                            <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                            <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                        </div>
+                                        <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
+                                    </div>
                                         </div>
                                     </div>
 
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-3'>
                                         <div className="single_gallery_item">
                                             {/* Product Image */}
                                             <div className="product-img">
@@ -84,15 +114,25 @@ const RelatedProducts = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
+                                        <p>Jeans midi cocktail dress</p>
+                                        <div className='d-flex align-items-center'>
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <p className='ms-1'>&nbsp;2 reviews</p>
+                                        </div>
+                                        <div className='d-flex align-items-center mt-2'>
+                                            <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                            <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                        </div>
+                                        <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
+                                    </div>
                                         </div>
                                     </div>
 
-                                    <div className='col-lg-4'>
+                                    <div className='col-lg-3'>
                                         <div className="single_gallery_item">
                                             {/* Product Image */}
                                             <div className="product-img">
@@ -103,11 +143,21 @@ const RelatedProducts = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
+                                        <p>Jeans midi cocktail dress</p>
+                                        <div className='d-flex align-items-center'>
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <i className='fa-solid fa-star' />
+                                            <p className='ms-1'>&nbsp;2 reviews</p>
+                                        </div>
+                                        <div className='d-flex align-items-center mt-2'>
+                                            <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                            <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                        </div>
+                                        <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
+                                    </div>
                                         </div>
                                     </div>
 

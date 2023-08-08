@@ -187,7 +187,7 @@ const ShopNow = () => {
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <p>Jeans midi cocktail dress</p>
+                                                <p className='item-title'>Jeans midi cocktail dress</p>
                                                 <div className='d-flex align-items-center'>
                                                     <i className='fa-solid fa-star' />
                                                     <i className='fa-solid fa-star' />

@@ -11,6 +11,7 @@ import ShopNow from "./Components/Main/ShopNow";
 import ProductDescription from "./Components/Main/ProductDescription";
 import Cart from "./Components/Main/Cart";
 import ItemForm from "./Components/Forms/ItemForm";
+import Login from "./Components/Auth/Login";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
+            <Route path="/Login" element={<Login />} />
+
             <Route path="/" element={<Homepage />} />
             <Route path="/Shop-now" element={<ShopNow />} />
             <Route path="/Product-description" element={<ProductDescription />} />

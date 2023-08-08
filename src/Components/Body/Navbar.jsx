@@ -61,8 +61,8 @@ const Navbar = () => {
                                 </div>
                                 <div className="help-line">
                                     <div className='d-flex'>
-                                        <a href="" className='ms-1'><i className="fa-solid fa-magnifying-glass" /></a>
-                                        <a href="" className='ms-1'><i className="fa-solid fa-user" /></a>
+                                        <a className='ms-1 additional-icons'><i className="fa-solid fa-magnifying-glass" style={{color:'#000'}} /></a>
+                                        <Link to='/Login' className='ms-1 additional-icons'><i className="fa-solid fa-user" /></Link>
                                     </div>
                                 </div>
                             </div>
