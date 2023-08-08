@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DiscountArea from '../HomePage/DiscountArea'
 
 const ShopNow = () => {
+    const [range, setRange] = useState(750)
     return (
         <div>
 
             <div>
-              <DiscountArea/>
-                <section className="shop_grid_area section_padding_100">
+                <DiscountArea />
+                <section className="shop_grid_area mt-5">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-md-4 col-lg-3">
@@ -20,56 +21,56 @@ const ShopNow = () => {
                                                 <ul id="menu-content2" className="menu-content collapse out">
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#women2">
-                                                        <a href="#">Woman wear</a>
+                                                        <a >Woman wear</a>
                                                         <ul className="sub-menu collapse show" id="women2">
-                                                            <li><a href="#">Midi Dresses</a></li>
-                                                            <li><a href="#">Maxi Dresses</a></li>
-                                                            <li><a href="#">Prom Dresses</a></li>
-                                                            <li><a href="#">Little Black Dresses</a></li>
-                                                            <li><a href="#">Mini Dresses</a></li>
+                                                            <li><a >Midi Dresses</a></li>
+                                                            <li><a >Maxi Dresses</a></li>
+                                                            <li><a >Prom Dresses</a></li>
+                                                            <li><a >Little Black Dresses</a></li>
+                                                            <li><a >Mini Dresses</a></li>
                                                         </ul>
                                                     </li>
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#man2" className="collapsed">
-                                                        <a href="#">Man Wear</a>
+                                                        <a >Man Wear</a>
                                                         <ul className="sub-menu collapse" id="man2">
-                                                            <li><a href="#">Man Dresses</a></li>
-                                                            <li><a href="#">Man Black Dresses</a></li>
-                                                            <li><a href="#">Man Mini Dresses</a></li>
+                                                            <li><a >Man Dresses</a></li>
+                                                            <li><a >Man Black Dresses</a></li>
+                                                            <li><a >Man Mini Dresses</a></li>
                                                         </ul>
                                                     </li>
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#kids2" className="collapsed">
-                                                        <a href="#">Children</a>
+                                                        <a >Children</a>
                                                         <ul className="sub-menu collapse" id="kids2">
-                                                            <li><a href="#">Children Dresses</a></li>
-                                                            <li><a href="#">Mini Dresses</a></li>
+                                                            <li><a >Children Dresses</a></li>
+                                                            <li><a >Mini Dresses</a></li>
                                                         </ul>
                                                     </li>
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#bags2" className="collapsed">
-                                                        <a href="#">Bags &amp; Purses</a>
+                                                        <a >Bags &amp; Purses</a>
                                                         <ul className="sub-menu collapse" id="bags2">
-                                                            <li><a href="#">Bags</a></li>
-                                                            <li><a href="#">Purses</a></li>
+                                                            <li><a >Bags</a></li>
+                                                            <li><a >Purses</a></li>
                                                         </ul>
                                                     </li>
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#eyewear2" className="collapsed">
-                                                        <a href="#">Eyewear</a>
+                                                        <a >Eyewear</a>
                                                         <ul className="sub-menu collapse" id="eyewear2">
-                                                            <li><a href="#">Eyewear Style 1</a></li>
-                                                            <li><a href="#">Eyewear Style 2</a></li>
-                                                            <li><a href="#">Eyewear Style 3</a></li>
+                                                            <li><a >Eyewear Style 1</a></li>
+                                                            <li><a >Eyewear Style 2</a></li>
+                                                            <li><a >Eyewear Style 3</a></li>
                                                         </ul>
                                                     </li>
                                                     {/* Single Item */}
                                                     <li data-toggle="collapse" data-target="#footwear2" className="collapsed">
-                                                        <a href="#">Footwear</a>
+                                                        <a >Footwear</a>
                                                         <ul className="sub-menu collapse" id="footwear2">
-                                                            <li><a href="#">Footwear 1</a></li>
-                                                            <li><a href="#">Footwear 2</a></li>
-                                                            <li><a href="#">Footwear 3</a></li>
+                                                            <li><a >Footwear 1</a></li>
+                                                            <li><a >Footwear 2</a></li>
+                                                            <li><a >Footwear 3</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -80,25 +81,41 @@ const ShopNow = () => {
                                         <h6 className="widget-title mb-30">Filter by Price</h6>
                                         <div className="widget-desc">
                                             <div className="slider-range">
-                                                <div data-min={0} data-max={3000} data-unit="$" className="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min={0} data-value-max={1350} data-label-result="Price:">
+                                                <input
+                                                    type="range"
+                                                    className="form-range"
+                                                    onChange={(e) => setRange(e.target.value)}
+                                                    id="customRange1"
+                                                    min="750"
+                                                    max="4500"
+                                                    step="50"
+                                                    style={{
+                                                        '--bs-thumb-color': 'black',
+                                                        '--bs-track-color': 'gray',
+                                                    }}
+                                                />
+                                                {/* <div className="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min={0} data-value-max={1350} data-label-result="Price:">
                                                     <div className="ui-slider-range ui-widget-header ui-corner-all" />
                                                     <span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} />
                                                     <span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} />
-                                                </div>
-                                                <div className="range-price">Price: 0 - 1350</div>
+                                                </div> */}
+                                                <p>{range - 250} - {Number(range) + 250}</p>
+                                                <div className="range-price">Price: 500 - 4500</div>
                                             </div>
                                         </div>
                                     </div>
+
+
                                     <div className="widget color mb-70">
                                         <h6 className="widget-title mb-30">Filter by Color</h6>
                                         <div className="widget-desc">
                                             <ul className="d-flex justify-content-between">
-                                                <li className="gray"><a href="#"><span>(3)</span></a></li>
-                                                <li className="red"><a href="#"><span>(25)</span></a></li>
-                                                <li className="yellow"><a href="#"><span>(112)</span></a></li>
-                                                <li className="green"><a href="#"><span>(72)</span></a></li>
-                                                <li className="teal"><a href="#"><span>(9)</span></a></li>
-                                                <li className="cyan"><a href="#"><span>(29)</span></a></li>
+                                                <li className="gray"><a ><span>(3)</span></a></li>
+                                                <li className="red"><a ><span>(25)</span></a></li>
+                                                <li className="yellow"><a ><span>(112)</span></a></li>
+                                                <li className="green"><a ><span>(72)</span></a></li>
+                                                <li className="teal"><a ><span>(9)</span></a></li>
+                                                <li className="cyan"><a ><span>(29)</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -106,17 +123,17 @@ const ShopNow = () => {
                                         <h6 className="widget-title mb-30">Filter by Size</h6>
                                         <div className="widget-desc">
                                             <ul className="d-flex justify-content-between">
-                                                <li><a href="#">XS</a></li>
-                                                <li><a href="#">S</a></li>
-                                                <li><a href="#">M</a></li>
-                                                <li><a href="#">L</a></li>
-                                                <li><a href="#">XL</a></li>
-                                                <li><a href="#">XXL</a></li>
+                                                <li><a >XS</a></li>
+                                                <li><a >S</a></li>
+                                                <li><a >M</a></li>
+                                                <li><a >L</a></li>
+                                                <li><a >XL</a></li>
+                                                <li><a >XXL</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="widget recommended">
-                                        <h6 className="widget-title mb-30">Recommended</h6>
+                                        <h6 className="widget-title mb-30">Hot in the market</h6>
                                         <div className="widget-desc">
                                             {/* Single Recommended Product */}
                                             <div className="single-recommended-product d-flex mb-30">
@@ -125,6 +142,7 @@ const ShopNow = () => {
                                                 </div>
                                                 <div className="single-recommended-desc">
                                                     <h6>Men’s T-shirt</h6>
+                                                    <p style={{fontSize:'12px', textDecoration:'line-through', marginBottom:'0px'}}>$ 39.99</p>
                                                     <p>$ 39.99</p>
                                                 </div>
                                             </div>
@@ -135,6 +153,8 @@ const ShopNow = () => {
                                                 </div>
                                                 <div className="single-recommended-desc">
                                                     <h6>Blue mini top</h6>
+                                                    <p style={{fontSize:'12px', textDecoration:'line-through', marginBottom:'0px'}}>$ 39.99</p>
+
                                                     <p>$ 19.99</p>
                                                 </div>
                                             </div>
@@ -145,6 +165,7 @@ const ShopNow = () => {
                                                 </div>
                                                 <div className="single-recommended-desc">
                                                     <h6>Women’s T-shirt</h6>
+                                                    <p style={{fontSize:'12px', textDecoration:'line-through', marginBottom:'0px'}}>$ 39.99</p>
                                                     <p>$ 39.99</p>
                                                 </div>
                                             </div>
@@ -161,15 +182,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-1.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -178,15 +209,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-2.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -195,15 +236,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-3.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -212,15 +263,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-4.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -229,15 +290,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-5.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -246,15 +317,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-6.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -263,15 +344,25 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-7.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
+                                                </div>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
                                         {/* Single gallery Item */}
@@ -280,42 +371,36 @@ const ShopNow = () => {
                                             <div className="product-img">
                                                 <img src="img/product-img/product-8.jpg" alt />
                                                 <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                    <a data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
                                                 </div>
                                             </div>
                                             {/* Product Description */}
                                             <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
                                                 <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                        {/* Single gallery Item */}
-                                        <div className="col-12 col-sm-6 col-lg-4 single_gallery_item wow fadeInUpBig" data-wow-delay="1s">
-                                            {/* Product Image */}
-                                            <div className="product-img">
-                                                <img src="img/product-img/product-9.jpg" alt />
-                                                <div className="product-quicview">
-                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i className="ti-plus" /></a>
+                                                <div className='d-flex align-items-center'>
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <i className='fa-solid fa-star' />
+                                                    <p className='ms-1'>&nbsp;2 reviews</p>
                                                 </div>
-                                            </div>
-                                            {/* Product Description */}
-                                            <div className="product-description">
-                                                <h4 className="product-price">$39.90</h4>
-                                                <p>Jeans midi cocktail dress</p>
-                                                {/* Add to Cart */}
-                                                <a href="#" className="add-to-cart-btn">ADD TO CART</a>
+                                                <div className='d-flex align-items-center mt-2'>
+                                                    <span className='product-price-line' style={{ textDecoration: 'line-through' }}>$39.90</span>
+                                                    <h4 className="product-price" style={{ fontSize: '19px' }}>&nbsp; $39.90</h4>
+                                                </div>
+                                                <a href="#" className="add-to-cart-btn" style={{ marginTop: '20px' }}>ADD TO CART</a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
-                                <div className="shop_pagination_area wow fadeInUp" data-wow-delay="1.1s">
+                                <div className="shop_pagination_area wow fadeInUp mb-5" data-wow-delay="1.1s">
                                     <nav aria-label="Page navigation">
                                         <ul className="pagination pagination-sm">
-                                            <li className="page-item active"><a className="page-link" href="#">01</a></li>
-                                            <li className="page-item"><a className="page-link" href="#">02</a></li>
-                                            <li className="page-item"><a className="page-link" href="#">03</a></li>
+                                            <li className="page-item active"><a className="page-link" >01</a></li>
+                                            <li className="page-item"><a className="page-link" >02</a></li>
+                                            <li className="page-item"><a className="page-link" >03</a></li>
                                         </ul>
                                     </nav>
                                 </div>

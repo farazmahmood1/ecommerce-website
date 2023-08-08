@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
     return (
         <div>
 
@@ -62,9 +63,7 @@ const Navbar = () => {
                                     <div className='d-flex'>
                                         <a href="" className='ms-1'><i className="fa-solid fa-magnifying-glass" /></a>
                                         <a href="" className='ms-1'><i className="fa-solid fa-user" /></a>
-                                        <a href="" className='ms-1'><i className="fa-solid fa-cart-shopping" /></a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

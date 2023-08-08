@@ -129,3 +129,17 @@ body {
     height: 40%;
   }
 }
+
+
+/* range */
+.form-range::-webkit-slider-thumb {
+  background-color: var(--bs-thumb-color);
+  border: none;
+}
+
+.form-range::-ms-track {
+  background-color: var(--bs-track-color);
+  height: 4px;
+}
+
+

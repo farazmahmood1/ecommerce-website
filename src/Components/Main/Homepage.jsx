@@ -1,5 +1,4 @@
 import React from 'react'
-import DiscountArea from '../HomePage/DiscountArea'
 import Hero from '../HomePage/Hero'
 import NewArrivals from '../HomePage/NewArrivals'
 import Testimonial from '../HomePage/Testimonials'
@@ -12,7 +11,6 @@ import Blogs from '../HomePage/Blogs'
 const Homepage = () => {
     return (
         <div>
-            {/* <DiscountArea /> */}
             <Hero />
             <TwoCategories />
             <ItemInfo />

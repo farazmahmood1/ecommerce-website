@@ -60,7 +60,7 @@ const Blogs = () => {
                             <div className="col-lg-12">
                                 <div className="card b-h-box position-relative font-14 border-0 mb-4">
                                     {/* src={`${Imagesurl}${items.item_image}`} */}
-                                    <img className="card-img img-fluid" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img11.jpg" alt="Card image" />
+                                    <img className="card-img img-fluid" src="img/product-img/product-1.jpg" alt="Card image" />
                                     <div className="card-img-overlay overflow-hidden">
                                         <div className="d-flex align-items-center">
                                             <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Lahore, Pakistan</span>
@@ -77,7 +77,7 @@ const Blogs = () => {
                             <div className="col-lg-12">
                                 <div className="card b-h-box position-relative font-14 border-0 mb-4">
                                     {/* src={`${Imagesurl}${items.item_image}`} */}
-                                    <img className="card-img img-fluid" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img11.jpg" alt="Card image" />
+                                    <img className="card-img img-fluid" src="img/product-img/product-2.jpg" alt="Card image" />
                                     <div className="card-img-overlay overflow-hidden">
                                         <div className="d-flex align-items-center">
                                             <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Lahore, Pakistan</span>
@@ -93,10 +93,10 @@ const Blogs = () => {
 
                             <div className="col-lg-12">
                                 <div className="card b-h-box position-relative font-14 border-0 mb-4">
-                                    <img className="card-img" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img11.jpg" alt="Card image" />
+                                    <img className="card-img" src="img/product-img/product-3.jpg" alt="Card image" />
                                     <div className="card-img-overlay overflow-hidden">
                                         <div className="d-flex align-items-center">
-                                            <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Charity, Ngo</span>
+                                            <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Islambad, Pak</span>
                                             <div className="ml-2">
                                                 <span className="ml-2">Feb 18, 2018</span>
                                             </div>
@@ -110,7 +110,7 @@ const Blogs = () => {
                             <div className="col-lg-12">
                                 <div className="card b-h-box position-relative font-14 border-0 mb-4">
                                     {/* src={`${Imagesurl}${items.item_image}`} */}
-                                    <img className="card-img img-fluid" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img11.jpg" alt="Card image" />
+                                    <img className="card-img img-fluid" src="img/product-img/product-4.jpg" alt="Card image" />
                                     <div className="card-img-overlay overflow-hidden">
                                         <div className="d-flex align-items-center">
                                             <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Lahore, Pakistan</span>
@@ -126,7 +126,7 @@ const Blogs = () => {
 
                             <div className="col-lg-12">
                                 <div className="card b-h-box position-relative font-14 border-0 mb-4">
-                                    <img className="card-img" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img11.jpg" alt="Card image" />
+                                    <img className="card-img" src="img/product-img/product-5.jpg" alt="Card image" />
                                     <div className="card-img-overlay overflow-hidden">
                                         <div className="d-flex align-items-center">
                                             <span className="bg-danger-gradiant badge overflow-hidden text-white px-3 py-1 font-weight-normal">Charity, Ngo</span>
