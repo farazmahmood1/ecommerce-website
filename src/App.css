@@ -1,4 +1,3 @@
-
 /* core CSS */
 
 html,
@@ -43,7 +42,6 @@ body {
 }
 
 /* blogs */
-
 
 .blog-home5 h1,
 .blog-home5 h2,
@@ -130,7 +128,6 @@ body {
   }
 }
 
-
 /* range */
 .form-range::-webkit-slider-thumb {
   background-color: var(--bs-thumb-color);
@@ -144,7 +141,37 @@ body {
 
 /* login */
 
-.login-input{
-  
+.login-background {
+  position: relative;
+  z-index: 12;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
+.login-input {
+  padding: 10px;
+  border-radius: 0px;
+  border-color: #121212bf;
+  margin: 1px;
+}
+
+.login-input:focus,
+.login-input:active {
+  border-color: #121212bf;
+  border: 2px solid #121212bf;
+  transition: 0.2s ease;
+  box-shadow: none;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #121212bf;
+}
+
+.account-create {
+  margin-top: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
 
-            <header className="header_area bg-img background-overlay-white" style={{ backgroundImage: 'url(img/bg-img/bg-1.jpg)' }}>
+            <header className="header_area bg-img background-overlay-white" style={{ backgroundImage: 'url(img/bg-img/bg-1.jpg)', borderBottom: '0.5px solid #000' }}>
                 <div className="top_header_area">
                     <div className="container h-100">
                         <div className="row h-100 align-items-center justify-content-end">
@@ -59,9 +59,9 @@ const Navbar = () => {
                                         </div>
                                     </nav>
                                 </div>
-                                <div className="help-line">
+                                <div className="header-social-area">
                                     <div className='d-flex'>
-                                        <a className='ms-1 additional-icons'><i className="fa-solid fa-magnifying-glass" style={{color:'#000'}} /></a>
+                                        <a className='ms-1 additional-icons'><i className="fa-solid fa-magnifying-glass" /></a>
                                         <Link to='/Login' className='ms-1 additional-icons'><i className="fa-solid fa-user" /></Link>
                                     </div>
                                 </div>
