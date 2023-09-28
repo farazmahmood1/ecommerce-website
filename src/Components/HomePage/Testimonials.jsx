@@ -58,9 +58,6 @@ const Testimonials = () => {
                     <div className="row justify-content-center">
                         <div className="col-12 col-md-8">
 
-
-
-
                             <div className="karl-testimonials-slides ">
                                 <Slider {...settings}>
                                     <div>
