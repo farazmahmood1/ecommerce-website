@@ -13,7 +13,7 @@ const Navbar = () => {
                             <div className="col-12 col-lg-7">
                                 <div className="top_single_area d-flex align-items-center">
                                     <div className="top_logo">
-                                        <a href="#"><img src="img/core-img/logo.png" alt /></a>
+                                        <a href="#"><img src="img/core-img/logo.png" alt="Avant-Grade Logo" /></a>
                                     </div>
                                     <div className="header-cart-menu d-flex align-items-center ml-auto">
                                         <div className="cart me-3">
@@ -25,15 +25,16 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="main_header_area">
                     <div className="container h-100">
                         <div className="row h-100">
                             <div className="col-12 d-md-flex justify-content-between">
                                 <div className="header-social-area">
-                                    <a href="#"><span className="karl-level">Share</span> <i className="fa fa-pinterest" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fa fa-linkedin" aria-hidden="true" /></a>
+                                    <a href="#" target='_blank'><span className="karl-level">Share</span> <i className="fa fa-facebook" aria-hidden="true" /></a>
+                                    <a href="#" target='_blank'><i className="fa fa-twitter" aria-hidden="true" /></a>
+                                    <a href="#" target='_blank'><i className="fa fa-linkedin" aria-hidden="true" /></a>
+                                    <a href="#" target='_blank'><i className="fa fa-globe" aria-hidden="true" /></a>
                                 </div>
                                 <div className="main-menu-area">
                                     <nav className="navbar navbar-expand-lg align-items-start">

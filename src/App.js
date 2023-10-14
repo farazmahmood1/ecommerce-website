@@ -24,12 +24,14 @@ function App() {
           <Routes>
             <Route path="/Login" element={<Login />} />
 
+
             <Route path="/" element={<Homepage />} />
             <Route path="/Shop-now" element={<ShopNow />} />
             <Route path="/Product-description" element={<ProductDescription />} />
             <Route path="/Cart" element={< Cart />} />
-
             <Route path="/Checkout" element={< ItemForm />} />
+
+
           </Routes>
         </Router>
         <Footer />

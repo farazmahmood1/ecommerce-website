@@ -46,7 +46,7 @@ const Hero = () => {
             <section className="">
                 <div className="">
                     <Slider {...settings}>
-                        <div className="height-800 background-overlay"  >
+                        <div className="height-800 background-overlay background-hover-change"  >
                             <div className="single_slide h-100" style={{ backgroundImage: 'url(../img/bg-img/bg-1.jpg)' }}>
                                 <div className="row h-100 align-items-center" >
                                     <div className="col-12">
