@@ -175,3 +175,11 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.col-five{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 19.8333335%;
+  flex: 0 0 19.8333335%;
+  max-width: 19.8333335%;
+}
+

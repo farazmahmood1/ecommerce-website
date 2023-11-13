@@ -26,7 +26,7 @@ const NewArrivals = () => {
                 <div className="container">
                     <div className="row karl-new-arrivals">
                         {/* Single gallery Item Start */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.2s">
+                        <div className="col-five single_gallery_item women wow fadeInUpBig" data-wow-delay="0.2s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-1.jpg" alt />
@@ -43,7 +43,7 @@ const NewArrivals = () => {
                             </div>
                         </div>
                         {/* Single gallery Item Start */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.3s">
+                        <div className=" col-five single_gallery_item women wow fadeInUpBig" data-wow-delay="0.3s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-2.jpg" alt />
@@ -60,7 +60,7 @@ const NewArrivals = () => {
                             </div>
                         </div>
                         {/* Single gallery Item Start */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item access wow fadeInUpBig" data-wow-delay="0.4s">
+                        <div className=" col-five single_gallery_item access wow fadeInUpBig" data-wow-delay="0.4s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-3.jpg" alt />
@@ -77,7 +77,7 @@ const NewArrivals = () => {
                             </div>
                         </div>
                         {/* Single gallery Item Start */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item shoes wow fadeInUpBig" data-wow-delay="0.5s">
+                        <div className=" col-five single_gallery_item shoes wow fadeInUpBig" data-wow-delay="0.5s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-4.jpg" alt />
@@ -94,7 +94,7 @@ const NewArrivals = () => {
                             </div>
                         </div>
                         {/* Single gallery Item Start */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.6s">
+                        <div className=" col-five single_gallery_item women wow fadeInUpBig" data-wow-delay="0.6s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-5.jpg" alt />
@@ -111,7 +111,7 @@ const NewArrivals = () => {
                             </div>
                         </div>
                         {/* Single gallery Item */}
-                        <div className="col-lg-3 col-sm-2 col-md-3 single_gallery_item kids man wow fadeInUpBig" data-wow-delay="0.7s">
+                        <div className=" col-five single_gallery_item kids man wow fadeInUpBig" data-wow-delay="0.7s">
                             {/* Product Image */}
                             <div className="product-img">
                                 <img src="img/product-img/product-6.jpg" alt />
